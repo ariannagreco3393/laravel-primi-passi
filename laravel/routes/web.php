@@ -17,3 +17,7 @@ Route::get('/', function () {
     $names = ['Arianna', 'Elisa', 'Marcello'];
     return view('home', compact('names'));
 });
+
+Route::get('/contacts', function() {
+    return view('contacts');
+})->name('contatti');

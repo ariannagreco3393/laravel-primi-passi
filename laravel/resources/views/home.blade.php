@@ -16,5 +16,10 @@
     </head>
     <body>
         <h1>Hello World</h1>
+        <ul>
+            @foreach ($names as $name)
+            <li>{{ $name }}</li>
+            @endforeach
+        </ul>
     </body>
 </html>
